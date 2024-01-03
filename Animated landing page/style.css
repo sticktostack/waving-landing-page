@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100vh;
+  width: 100%;
+}
+.navright h3::selection {
+  background-color: transparent;
+}
+.navleft h3::selection {
+  background-color: transparent;
+}
+.back {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.back img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.top {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.area {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  max-width: 1920px;
+  height: 100%;
+}
+.nav {
+  width: 100%;
+  display: flex;
+}
+.navleft {
+  width: 65%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  letter-spacing: 1px;
+}
+.nav img {
+  font-weight: 700;
+  color: white;
+  height: 65px;
+}
+.navleft h3 {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.594);
+  text-transform: uppercase;
+  font-family: "gilroy";
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+}
+.navright {
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.594);
+  width: 35%;
+  letter-spacing: 1px;
+  align-items: center;
+  gap: 40px;
+  justify-content: flex-end;
+  display: flex;
+}
+.navright h3 {
+  text-transform: uppercase;
+  font-family: "gilroy";
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+}
+.hero {
+  position: absolute;
+  left: 0%;
+  transform: translate(-0, -50%);
+  top: 50%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.heroleft {
+  min-width: 45%;
+}
+.heroleft .elem {
+  overflow: hidden;
+  height: 10vw;
+  position: relative;
+}
+.heroleft .elem h1:nth-child(1) {
+  top: 0;
+}
+.elem h1 {
+  top: 100%;
+  left: 0;
+  position: absolute;
+  text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.614);
+  line-height: 0.95;
+  font-size: 12vw;
+  font-family: "kajiro";
+  font-weight: 100;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.btn button {
+  pointer-events: visible;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.516);
+  border: none;
+  background-color: #fff;
+  font-weight: 100;
+  font-family: "kajiro";
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: 7px;
+  font-size: 3.5vw;
+  letter-spacing: 0.4vw;
+  padding: 1vw 2vw;
+}
+.heroright {
+  color: #fff;
+  font-family: "gilroy";
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  max-width: 17%;
+  min-height: 70px;
+  gap: 1.6vw;
+}
+.heroright p {
+  font-size: 0.7vw;
+  font-weight: 200;
+  text-align: right;
+}
+.imgdiv {
+  box-shadow: -10px -5px 12px rgba(33, 33, 33, 0.635);
+  box-shadow: -10px 10px 12px rgba(33, 33, 33, 0.635);
+  box-shadow: -10px -5px 12px rgba(33, 33, 33, 0.635);
+  border: none;
+  border-radius: 5px;
+  height: 9vw;
+  width: 12.3vw;
+}
+.imgdiv img {
+  height: 100%;
+  border-radius: 5px;
+  width: 100%;
+  object-fit: cover;
+}
